@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Francisco Soares Fonseca">
+    <title>Faces - Formulário</title>
+
+    <link rel="shortcut icon" href="images/favicon.ico" />
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/album/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Style -->
+    <link href="css/style.css" rel="stylesheet">
+
+  </head>
+  <body>
+    
+<header>
+  <div class="collapse bg-primary" id="navbarHeader">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 col-md-7 py-4">
+          <h4 class="text-white">Painel de Usuário</h4>
+          <small>Página confecionanda para o Desafio Mateus. Sistema de de cadastro de perfís.</small>
+          <img src="images/LogomarcaMateus.png" class="img-fluid"/>
+        </div>
+        <div class="col-sm-4 offset-md-1 py-4">
+          <h4 class="text-white">Menu Principal</h4>
+          <ul class="list-unstyled">
+            <li><a href="index.html" class="text-white">Resetar Usuários</a></li>
+            <li><a href="index.html" class="text-white">Sair do Sistema</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="navbar  navbar-dark bg-primary shadow-sm">
+    <div class="container">
+      <a href="#" class="navbar-brand d-flex align-items-center">
+        <img src="images/faces.png" class="ico-faces img-fluid"/>
+        <strong>Faces</strong>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section class="py-5 text-center container">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <h1 class="fw-light">Cadastro de Usuário</h1>
+        <p class="lead text-muted">Faça seu cadastro para ter acesso ao sistema.</p>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="album py-5 bg-light">
+    <div class="container">
+      <form class="needs-validation" novalidate="" method="POST" action="painel.html">
+        <div class="row g-3">
+          <div class="col-sm-6">
+            <label for="firstName" class="form-label">Nome</label>
+            <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+            <div class="invalid-feedback">
+              O nome é requerido
+            </div>
+          </div>
+
+          <div class="col-sm-6">
+            <label for="lastName" class="form-label">Sobrenome</label>
+            <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+            <div class="invalid-feedback">
+             O sobrenome é requerido
+            </div>
+          </div>
+
+          <div class="col-12">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="usuario@email.com"  required="">
+            <div class="invalid-feedback">
+              O E-email é requerido.
+            </div>
+          </div>
+
+
+          <div class="col-12">
+            <label for="descricao" class="form-label">Descrição</label>
+            <input type="text" class="form-control" id="descricao" placeholder="Escreva um poucosobre você">
+            <div class="invalid-feedback">
+              Escreva um pouco sobre você.
+            </div>
+          </div>
+
+          <div class="form-check">
+            <label class="form-label" for="customFile">Envio de arquivo de imagem.</label>
+            <input type="file" class="form-control" id="customFile" />
+          </div>  
+
+          <span>Informações de autenticação</span>
+          <hr class="my-4">
+
+
+          <div class="col-12">
+            <label for="username" class="form-label">Usuário</label>
+            <div class="input-group">
+              <input type="text" class="form-control" id="username"  required="">
+            <div class="invalid-feedback">
+              O usuário é requerido.
+              </div>
+            </div>
+          </div>
+
+
+           <div class="col-12">
+            <label for="username" class="form-label">Senha</label>
+            <div class="input-group">
+              <input type="password" class="form-control" id="username"  required="">
+            <div class="invalid-feedback">
+                A senha é requerida.
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <label for="username" class="form-label">Repita a senha</label>
+            <div class="input-group">
+              <input type="password" class="form-control" id="username"  required="">
+            <div class="invalid-feedback">
+                A senha é requerida.
+              </div>
+            </div>
+          </div>      
+        </div>
+        <button class="btn btn-secondary btn-lg mt-4" type="submit">Cadastrar usuário</button>
+        <a href="painel.html" class="btn btn-outline-secondary btn-lg mt-4" type="submit">Cancelar</a>
+      </form>
+
+
+
+      
+    </div>
+  </div>
+
+</main>
+
+<footer class="text-muted py-5">
+  <div class="container">
+    <p class="float-end mb-1">
+      <a href="#">Voltar ao Topo</a>
+    </p>
+    <p class="mb-1">Paindel de Usuários &copy; Francisco Soares</p>
+    <p class="mb-0">Modelo de página sugerida pela <a href="https://pulse.gupy.io/" target="_blanck">PULSE</a></p>
+  </div>
+</footer>
+
+
+    <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/form-validation.js"></script>
+      
+  </body>
+</html>
